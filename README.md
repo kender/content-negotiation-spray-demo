@@ -1,7 +1,7 @@
 ## run it
 
 ```sh
-sbt reStart
+sbt ~reStart
 ```
 
 ## call it
