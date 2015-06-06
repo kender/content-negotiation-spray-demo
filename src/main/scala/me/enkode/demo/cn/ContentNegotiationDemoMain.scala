@@ -9,9 +9,7 @@ object ContentNegotiationDemoMain extends App {
   implicit val actorSystem = ActorSystem()
 
   val rootRef = actorSystem.actorOf(Props(new Actor with ActorLogging {
-    override def receive = {
-      case _ ⇒
-    }
+    override def receive = Actor.emptyBehavior
 
     override def preStart() = {
       import context.dispatcher
